@@ -1,0 +1,10 @@
+{% extends "kontakt.html" %}
+
+{% block guestbook %}
+    <form action="/sporocilo/{{ sporocilo.key.id() }}/uredi" method="post">
+            <input class="form-control" name="ime" value="{{ sporocilo.ime }}">
+            <p></p>
+            <p></p>
+            <button class="btn btn-default" type="submit">OK</button>
+    </form>
+{% endblock guestbook %}

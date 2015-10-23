@@ -1,0 +1,10 @@
+{% extends "kontakt.html" %}
+
+{% block guestbook %}
+    <p>ID sporočila: {{ sporocilo.key.id() }}</p>
+    <p>Vnos sporočila: {{ sporocilo.ime }}</p>
+
+    <a href="/sporocilo/{{ sporocilo.key.id() }}/uredi">uredi</a>
+    <br>
+    <a href="/sporocilo/{{ sporocilo.key.id() }}/izbrisi">izbrisi</a>
+{% endblock guestbook %}

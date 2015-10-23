@@ -1,0 +1,11 @@
+{% extends "kontakt.html" %}
+
+{% block guestbook %}
+
+<h1>Ali res želiš izbrisati to sporočilo?</h1>
+
+        <form action="/sporocilo/{{ sporocilo.key.id() }}/izbrisi" method="post">
+                <button class="btn btn-default" type="submit">DA, izbriši</button>
+        </form>
+
+{% endblock guestbook %}
